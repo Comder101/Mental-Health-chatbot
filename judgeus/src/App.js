@@ -33,33 +33,35 @@ function VoiceChatbot() {
   return (
     <body>
     <div className='hello'>
-            <div class="d-flex flex-column justify-content-center w-100 h-100">
+          <div class="d-flex flex-column justify-content-center w-100 h-100">
 
-        <div class="d-flex flex-column justify-content-center align-items-center">
+      <div class="d-flex flex-column justify-content-center align-items-center">
 
-          </div>
         </div>
-        <div class="wrapper">
-          <div><span class="dot"></span></div>
-          <div><span class="dot"></span></div>
-          <div><span class="dot"></span></div>
-          <div><span class="dot"></span></div>
-          <div><span class="dot"></span></div>
-          <div><span class="dot"></span></div>
-          <div><span class="dot"></span></div>
-          <div><span class="dot"></span></div>
-          <div><span class="dot"></span></div>
-          <div><span class="dot"></span></div>
-          <div><span class="dot"></span></div>
-          <div><span class="dot"></span></div>
-          <div><span class="dot"></span></div>
-          <div><span class="dot"></span></div>
-          <div><span class="dot"></span></div>
-        </div>
+      </div>
+      <div class="wrapper">
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+      </div> 
+       
       
       <h1>ModiBhakt</h1>
       
       <div>
+
           
         
         <form onSubmit={handleSubmit}>
@@ -78,3 +80,7 @@ function VoiceChatbot() {
 }
 
 export default VoiceChatbot;
+
+
+
+ 
