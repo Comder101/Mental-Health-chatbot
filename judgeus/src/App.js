@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom/client';
 import './App.css';
-import modi from './img.jpeg'
+import modi from './img.jpg'
 
 
 function VoiceChatbot() {
@@ -59,17 +59,20 @@ function VoiceChatbot() {
         <div><span class="dot"></span></div>
         <div><span class="dot"></span></div>
       </div> 
+      
+
        
       <div className='chatbot-container'>
       <div className='chatbot-messages'>
+      
+        <h3 >ModiBhakt</h3>
         
-        <h3>ModiBhakt</h3>
-        <div className='image'>
-        <img src={modi}></img>
-        </div>
+        <img className="my-image" src={modi}></img>
+        
         {botResponse !== '' && (
           <div className='chatbot-message bot'>{botResponse}</div>
         )}
+      
       </div>
       <hr></hr>
       <form onSubmit={handleSubmit} className='chatbot-form'>
@@ -81,6 +84,7 @@ function VoiceChatbot() {
         />
         <button type='submit'>Send</button>
       </form>
+      
     </div>
       </div>
     </body>
