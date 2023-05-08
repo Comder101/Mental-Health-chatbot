@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom/client';
 import './App.css';
+import modi from './img.jpeg'
 
 
 function VoiceChatbot() {
@@ -32,8 +33,10 @@ function VoiceChatbot() {
 
   return (
     <body>
+      
     <div className='hello'>
-          <div class="d-flex flex-column justify-content-center w-100 h-100">
+    
+      <div class="d-flex flex-column justify-content-center w-100 h-100">
 
       <div class="d-flex flex-column justify-content-center align-items-center">
 
@@ -57,24 +60,29 @@ function VoiceChatbot() {
         <div><span class="dot"></span></div>
       </div> 
        
-      
-      <h1>ModiBhakt</h1>
-      
-      <div>
-
-          
+      <div className='chatbot-container'>
+      <div className='chatbot-messages'>
         
-        <form onSubmit={handleSubmit}>
-          <input type="text" value={inputValue} onChange={(e) => setInputValue(e.target.value)} />
-          <br></br><br></br>
-          <button type="submit"> Talk to me.</button>
-        </form>
+        <h3>ModiBhakt</h3>
+        <div className='image'>
+        <img src={modi}></img>
+        </div>
+        {botResponse !== '' && (
+          <div className='chatbot-message bot'>{botResponse}</div>
+        )}
       </div>
-       <div>
-        {botResponse !== '' && <p>{botResponse}</p>}
-      </div> 
-      
-    </div>
+      <hr></hr>
+      <form onSubmit={handleSubmit} className='chatbot-form'>
+        <input
+          type='text'
+          value={inputValue}
+          onChange={(e) => setInputValue(e.target.value)}
+          placeholder='Type your message here...'
+        />
+        <button type='submit'>Send</button>
+      </form>
+    </div>
+      </div>
     </body>
   );
 }
