@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import ReactDOM from 'react-dom/client';
+import './App.css';
+
 
 function VoiceChatbot() {
   const [inputValue, setInputValue] = useState('');
@@ -28,8 +31,32 @@ function VoiceChatbot() {
   };
 
   return (
+    <body>
     <div className='hello'>
-      <center>
+            <div class="d-flex flex-column justify-content-center w-100 h-100">
+
+        <div class="d-flex flex-column justify-content-center align-items-center">
+
+          </div>
+        </div>
+        <div class="wrapper">
+          <div><span class="dot"></span></div>
+          <div><span class="dot"></span></div>
+          <div><span class="dot"></span></div>
+          <div><span class="dot"></span></div>
+          <div><span class="dot"></span></div>
+          <div><span class="dot"></span></div>
+          <div><span class="dot"></span></div>
+          <div><span class="dot"></span></div>
+          <div><span class="dot"></span></div>
+          <div><span class="dot"></span></div>
+          <div><span class="dot"></span></div>
+          <div><span class="dot"></span></div>
+          <div><span class="dot"></span></div>
+          <div><span class="dot"></span></div>
+          <div><span class="dot"></span></div>
+        </div>
+      
       <h1>ModiBhakt</h1>
       
       <div>
@@ -41,11 +68,12 @@ function VoiceChatbot() {
           <button type="submit"> Talk to me.</button>
         </form>
       </div>
-      <div>
+       <div>
         {botResponse !== '' && <p>{botResponse}</p>}
-      </div>
-      </center>
+      </div> 
+      
     </div>
+    </body>
   );
 }
 
