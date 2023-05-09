@@ -4,6 +4,8 @@ import pyttsx3
 
 import speech_recognition as sr
 import shutil
+
+import spacy
 nlp = spacy.load("en_core_web_sm")
 # engine = pyttsx3.init('sapi5')
 # voices = engine.getProperty('voices')
