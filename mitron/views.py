@@ -1,7 +1,7 @@
 from django.shortcuts import render
 
 import pyttsx3
-import tkinter
+
 import speech_recognition as sr
 import shutil
 
