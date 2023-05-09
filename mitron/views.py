@@ -1,10 +1,14 @@
 from django.shortcuts import render
 
-import pyttsx3
-import tkinter
+import pyttsx3 
+
+import en_core_web_sm
+
 import speech_recognition as sr
 import shutil
 
+import spacy
+nlp = spacy.load("en_core_web_sm")
 # engine = pyttsx3.init('sapi5')
 # voices = engine.getProperty('voices')
 # engine.setProperty('voice', voices[1].id)
@@ -39,8 +43,8 @@ from chatterbot.trainers import ChatterBotCorpusTrainer
 from chatterbot.trainers import ListTrainer
 
 chatbot = ChatBot('Voice Chatbot')
-trainer = ChatterBotCorpusTrainer(chatbot)
-trainer.train('chatterbot.corpus.english')
+#trainer = ChatterBotCorpusTrainer(chatbot)
+#trainer.train('chatterbot.corpus.english')
 
 trainerl =  ListTrainer(chatbot)
 
