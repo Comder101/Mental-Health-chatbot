@@ -16,7 +16,7 @@ dill==0.3.6
 Django==3.2.19
 django-cors-headers==3.14.0
 djangorestframework==3.14.0
-en-core-web-sm == 3.5.0
+
 filelock==3.12.0
 
 gunicorn==20.1.0
