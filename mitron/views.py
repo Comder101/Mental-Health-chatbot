@@ -38,8 +38,8 @@ from chatterbot.trainers import ChatterBotCorpusTrainer
 from chatterbot.trainers import ListTrainer
 
 chatbot = ChatBot('Voice Chatbot')
-trainer = ChatterBotCorpusTrainer(chatbot)
-trainer.train('chatterbot.corpus.english')
+#trainer = ChatterBotCorpusTrainer(chatbot)
+#trainer.train('chatterbot.corpus.english')
 
 trainerl =  ListTrainer(chatbot)
 
