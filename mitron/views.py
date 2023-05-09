@@ -1,6 +1,8 @@
 from django.shortcuts import render
 
-import pyttsx3
+import pyttsx3 
+
+import en_core_web_sm
 
 import speech_recognition as sr
 import shutil
