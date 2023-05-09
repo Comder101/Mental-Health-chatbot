@@ -14,7 +14,7 @@ function VoiceChatbot() {
 
     if (userMessage !== '') {
       try {
-        const response = await fetch(`https://modibhakt.onrender.com/api/get_response/?message=${userMessage}`);
+        const response = await fetch(`https://modibhakt.onrender.com/api/response/?message=${userMessage}`);
         const data = await response.json();
         setBotResponse(data.message);
         speak(data.message);

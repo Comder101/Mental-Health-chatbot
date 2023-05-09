@@ -14,7 +14,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path,re_path
 from mitron import views
 
 from mitron.views import *
@@ -22,6 +22,6 @@ from mitron.views import *
 urlpatterns = [
     path('',views.index,name="botu"),
     path('admin/', admin.site.urls),
-    path('api/get_response/', get_response, name='get_response'),
+    re_path(r'^api/response/$', get_response, name='get_response'),
 ]
 
