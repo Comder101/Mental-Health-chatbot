@@ -33,6 +33,7 @@ import shutil
 #     return query
 # Create your views here.
 from django.http import JsonResponse
+import chatterbot 
 from chatterbot import ChatBot
 from chatterbot.trainers import ChatterBotCorpusTrainer
 from chatterbot.trainers import ListTrainer
