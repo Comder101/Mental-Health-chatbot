@@ -66,3 +66,20 @@ wasabi==1.1.1
 wikipedia==1.4.0
 xxhash==3.2.0
 zipp==3.15.0
+
+
+
+
+
+
+
+
+
+
+
+git clone https://github.com/Comder101/ChatterBot.git
+pip install ./ChatterBot
+
+
+
+pip install git+git://github.com/Comder101/ChatterBot.git@master

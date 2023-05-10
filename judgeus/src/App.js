@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom/client';
 import './App.css';
-import modi from './img.jpg'
+import modi from './img.png'
 
 
 function VoiceChatbot() {
@@ -14,7 +14,7 @@ function VoiceChatbot() {
 
     if (userMessage !== '') {
       try {
-        const response = await fetch(`https://modibhakt.onrender.com/api/response/?message=${userMessage}`);
+        const response = await fetch(`/api/response/?message=${userMessage}`);
         const data = await response.json();
         setBotResponse(data.message);
         speak(data.message);
@@ -65,7 +65,8 @@ function VoiceChatbot() {
       <div className='chatbot-container'>
       <div className='chatbot-messages'>
       
-        <h3 >ModiBhakt</h3>
+        <h3 >IPC ArticleBot</h3>
+        <h4>"Enter section number,keyword of the article you would like to know about</h4><br></br>
         
         <img className="my-image" src={modi}></img>
         
@@ -76,6 +77,7 @@ function VoiceChatbot() {
       </div>
       <hr></hr>
       <form onSubmit={handleSubmit} className='chatbot-form'>
+        
         <input
           type='text'
           value={inputValue}
