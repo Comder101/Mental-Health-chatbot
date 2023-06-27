@@ -41,12 +41,12 @@ nlp = spacy.load("en_core_web_sm")
 from django.http import JsonResponse
 import chatterbot 
 from chatterbot import ChatBot
-# from chatterbot.trainers import ChatterBotCorpusTrainer
+from chatterbot.trainers import ChatterBotCorpusTrainer
 from chatterbot.trainers import ListTrainer
 
 chatbot = ChatBot('Voice Chatbot')
-#trainer = ChatterBotCorpusTrainer(chatbot)
-#trainer.train('chatterbot.corpus.english')
+trainer = ChatterBotCorpusTrainer(chatbot)
+trainer.train('chatterbot.corpus.english')
 
 trainerl =  ListTrainer(chatbot)
 
