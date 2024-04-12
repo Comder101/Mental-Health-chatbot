@@ -2,12 +2,14 @@ import React, { useState } from 'react';
 import ReactDOM from 'react-dom/client';
 import './App.css';
 import modi from './img.png'
+import { Picker } from 'emoji-mart';
+
 
 
 function VoiceChatbot() {
   const [inputValue, setInputValue] = useState('');
   const [botResponse, setBotResponse] = useState('');
-
+  
   const handleSubmit = async (event) => {
     event.preventDefault();
     const userMessage = inputValue.trim();
@@ -30,6 +32,7 @@ function VoiceChatbot() {
     const utterance = new SpeechSynthesisUtterance(message);
     speechSynthesis.speak(utterance);
   };
+
 
   return (
     <body>
@@ -65,8 +68,9 @@ function VoiceChatbot() {
       <div className='chatbot-container'>
       <div className='chatbot-messages'>
       
-        <h3 >IPC ArticleBot</h3>
-        <h4>"Enter section number,keyword of the article you would like to know about</h4><br></br>
+        <h4 >Mental health Chatbot</h4>
+        <hr></hr>
+        <h4>Welcome how can I help you?</h4><br></br>
         
         <img className="my-image" src={modi}></img>
         
@@ -77,7 +81,7 @@ function VoiceChatbot() {
       </div>
       <hr></hr>
       <form onSubmit={handleSubmit} className='chatbot-form'>
-        
+      {/* <Picker onSelect={this.handleEmojiSelect} /> */}
         <input
           type='text'
           value={inputValue}

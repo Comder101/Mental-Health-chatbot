@@ -43,9 +43,7 @@ pygame==2.4.0
 python-dateutil==2.8.2
 pyttsx3==2.90
 pytz==2023.3
-spacy==3.5.2
-spacy-legacy==3.0.12
-spacy-loggers==1.0.4
+
 
 requests==2.30.0
 six==1.16.0
@@ -77,9 +75,3 @@ zipp==3.15.0
 
 
 
-git clone https://github.com/Comder101/ChatterBot.git
-pip install ./ChatterBot
-
-
-
-pip install git+git://github.com/Comder101/ChatterBot.git@master
